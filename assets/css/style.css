@@ -25,3 +25,26 @@ body {
   height: 90px;
   background-color: pink;
 }
+
+#startPage{
+  background-color: teal;
+  margin-top: 200px;
+  color: pink;
+  height: 300px;
+  width: 400px;
+}
+
+#startButton {
+  background-color: white;
+  color: teal;
+  width: 200px;
+  height: 60px;
+}
+
+#results {
+  background-color: teal;
+  margin-top: 200px;
+  color: pink;
+  height: 300px;
+  width: 400px;
+}
