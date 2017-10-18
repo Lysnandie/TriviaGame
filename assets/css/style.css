@@ -1,0 +1,27 @@
+body {
+
+  background-image: url("../images/wallpaper.jpg");
+
+
+}
+
+#quiz {
+  background-color: white;
+  height: auto;
+  width: 750px;
+  padding: 40px;
+  font-size: 18px;
+}
+
+#submitButton {
+  background-color: teal;
+  color: white;
+  width: 150px;
+  height: 80px;
+}
+
+#clock {
+  width: 40x;
+  height: 90px;
+  background-color: pink;
+}
