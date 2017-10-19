@@ -24,7 +24,7 @@ $("#startButton").on("click", function(){
 
 
 //timer for the game (in seconds)
-var time = 100;
+var time = 80;
 var starTime;
 
 //This decreases timer in 1 second intervals
