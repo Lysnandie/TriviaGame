@@ -132,7 +132,7 @@ console.log(question1);
   }
 
 
-  var question6 = $("input[type='textbox'][name='question6']").val();
+  var question6 = $("input[type='textbox'][name='question6']").val().trim();
 
 //converets user input to lowercase
 
