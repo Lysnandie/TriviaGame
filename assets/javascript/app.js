@@ -41,7 +41,9 @@ function decrement() {
   if (time === 0){
     $("#results").show();
     $("#quiz").hide();
+
     stop();
+    endGame();
   }
 }
 //To Stop the function from running at 0
