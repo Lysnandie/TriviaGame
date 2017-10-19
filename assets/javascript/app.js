@@ -7,6 +7,7 @@ var correct = 0;
 var incorrect = 0;
 var unanswered = 0;
 
+
 //hidden DIVs at start of game
 $("#quiz").hide();
 $("#results").hide();
@@ -49,16 +50,6 @@ function stop() {
 }
 
 
-//Quiz Answers
-function endGame(){
-  var question1 = $("input[type='radio'][name='question1']:checked").val();
-
-  if (question1 === "Deborah Cox") {
-  correct++;
-}
-}
-console.log(endGame);
-
 //submit quiz button
 $("#submitButton").on("click", function(){
   $("#quiz").hide();
@@ -68,10 +59,124 @@ $("#submitButton").on("click", function(){
   endGame();
 });
 
+//Quiz Answer validations
+function endGame(){
+  var question1 = $("input[type='radio'][name='question1']:checked").val();
+console.log(question1);
+  if (question1 === "Deborah Cox") {
+  correct++;
+  }
+  else if (question1 === undefined)
+  {
+    unanswered++;
+  }
+  else {
+    incorrect++;
+  }
 
-//need to calculate total number of correct and incorrect answers at the end of game
-//.text or html (results)
 
-$("#results").text(correct);
+  var question2 = $("input[type='radio'][name='question2']:checked").val();
 
+  if (question2 === "Keith Sweat") {
+  correct++;
+  }
+  else if (question2 === undefined)
+  {
+    unanswered++;
+  }
+  else {
+    incorrect++;
+  }
+
+  var question3 = $("input[type='radio'][name='question3']:checked").val();
+
+  if (question3 === "1996") {
+  correct++;
+  }
+  else if (question3 === undefined)
+  {
+    unanswered++;
+  }
+  else {
+    incorrect++;
+  }
+
+  var question4 = $("input[type='radio'][name='question4']:checked").val();
+
+  if (question4 === "Doo Wop (That Thing)") {
+  correct++;
+  }
+  else if (question4 === undefined)
+  {
+    unanswered++;
+  }
+  else {
+    incorrect++;
+  }
+
+
+
+  var question5 = $("input[type='radio'][name='question5']:checked").val();
+
+  if (question5 === "Right Here (Human Nature Remix)-Multiple Artist") {
+  correct++;
+  }
+  else if (question5 === undefined)
+  {
+    unanswered++;
+  }
+  else {
+    incorrect++;
+  }
+
+
+  var question6 = $("input[type='textbox'][name='question6']").val();
+
+//converets user input to lowercase
+
+  if (question6.toLowerCase() === "space jam") {
+  correct++;
+
+  }
+
+  else  {
+  incorrect++;
+  }
+
+
+  var question7 = $("input[type='radio'][name='question7']:checked").val();
+
+  if (question7 === "My Lovin'") {
+  correct++;
+  }
+  else if (question7 === undefined)
+  {
+    unanswered++;
+  }
+  else {
+    incorrect++;
+  }
+
+
+  var question8 = $("input[type='radio'][name='question8']:checked").val();
+
+  if (question8 === "Poison-Bell Biv Devoe, Weak-SWV, Creep-TLC, Are You That Somebody-Aaliyah") {
+  correct++;
+  }
+  else if (question8 === undefined)
+  {
+    unanswered++;
+  }
+  else {
+    incorrect++;
+  }
+
+
+//Calculate total number of correct, incorrect, and unanswered answers at the end of game
+
+$("#correct").text("You got" + " " + correct + " " + "correct!");
+$("#incorrect").text("You got" + " " + incorrect + " " + "incorrect");
+$("#unanswered").text("You left" + " " + unanswered + " " +"unanswered");
+
+}
 });

@@ -5,8 +5,14 @@ body {
 
 }
 
+#header {
+  font-family: 'Frijole', cursive;
+  font-size: 112px;
+
+}
+
 #quiz {
-  background-color: white;
+  background-color: ;
   height: auto;
   width: 750px;
   padding: 40px;
@@ -43,8 +49,9 @@ body {
 
 #results {
   background-color: teal;
+  font-size: 35px;
   margin-top: 200px;
   color: pink;
-  height: 300px;
-  width: 400px;
+  height: 350px;
+  width: 450px;
 }
