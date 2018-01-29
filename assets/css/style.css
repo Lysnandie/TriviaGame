@@ -1,14 +1,10 @@
 body {
-
   background-image: url("../images/wallpaper.jpg");
-
-
 }
 
 #header {
   font-family: 'Frijole', cursive;
   font-size: 112px;
-
 }
 
 #quiz {
@@ -32,7 +28,7 @@ body {
   background-color: pink;
 }
 
-#startPage{
+#startPage {
   background-color: teal;
   margin-top: 200px;
   color: pink;
